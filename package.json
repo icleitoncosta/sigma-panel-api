@@ -1,7 +1,7 @@
 {
   "name": "painel-sigma-api",
-  "version": "1.0.0",
-  "description": "Umaa forma fácil de você gerenciar painel da Sigma sem eles disponibilizarem a API. ",
+  "version": "0.0.1",
+  "description": "Uma forma fácil de você gerenciar painel da Sigma IPTV sem eles disponibilizarem a API. ",
   "main": "dist/server.js",
   "scripts": {
     "test": "test",
@@ -22,10 +22,11 @@
     "sigma api",
     "painel sigma",
     "sigma st",
-    "qpanel"
+    "qpanel",
+    "iptv"
   ],
   "author": "icleitoncosta",
-  "license": "UNLICENSED",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/icleitoncosta/sigma-panel-api/issues"
   },
