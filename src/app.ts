@@ -9,12 +9,7 @@ app.use(express.json());
 //app.options("*", cors());
 app.use(cors());
 app.use((req: any, res: any, next: any) => {
-  const original: any = req.headers.origin;
-    res.setHeader('Access-Control-Allow-Origin', '*');
-    /*cors({
-        origin: original,
-        credentials: true,
-    });*/
+  res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Credentials', 'true');
   res.setHeader('Access-Control-Allow-Headers', '*');
   res.setHeader(
