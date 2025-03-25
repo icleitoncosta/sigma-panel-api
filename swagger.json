@@ -1,0 +1,77 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Sigma.st Painel IPTV API",
+    "description": "API Simples para gerenciar o Sigma Painel IPTV",
+    "version": "1.0.0"
+  },
+  "host": "localhost:3131",
+  "basePath": "/",
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/novo-teste": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "username": {
+                  "example": "any"
+                },
+                "password": {
+                  "example": "any"
+                },
+                "server_id": {
+                  "example": "any"
+                },
+                "package_id": {
+                  "example": "any"
+                },
+                "trial_hours": {
+                  "example": "any"
+                },
+                "email": {
+                  "example": "any"
+                },
+                "whatsapp": {
+                  "example": "any"
+                },
+                "telegram": {
+                  "example": "any"
+                },
+                "name": {
+                  "example": "any"
+                },
+                "plan_price": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      }
+    }
+  }
+}

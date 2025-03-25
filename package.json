@@ -12,7 +12,8 @@
     "changelog:last": "conventional-changelog -p angular -r 2 --config ./conventional-changelog.config.json",
     "changelog:preview": "conventional-changelog -p angular -u --config ./conventional-changelog.config.json",
     "changelog:update": "conventional-changelog -p angular -i CHANGELOG.md -s --config ./conventional-changelog.config.json",
-    "release": "release-it"
+    "release": "release-it",
+    "swagger": "node ./swagger.js"
   },
   "repository": {
     "type": "git",
@@ -42,6 +43,7 @@
     "@types/node": "^22.13.11",
     "conventional-changelog-cli": "^5.0.0",
     "release-it": "^18.1.2",
+    "swagger-autogen": "^2.23.7",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.2"
   },

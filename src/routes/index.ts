@@ -7,6 +7,8 @@ const routes: Router = Router();
 
 routes.post("/novo-teste", validateBearerToken, async (req: express.Request, res: express.Response): Promise<any> => {
     try {
+        const { username, password, server_id, package_id, trial_hours, email, whatsapp, telegram, name, plan_price } = req?.body;
+
         if(!req?.body?.username || !req?.body?.password) {
             return res.status(400).send('username and password are required');
         }
