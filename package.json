@@ -1,0 +1,42 @@
+{
+  "name": "painel-sigma-api",
+  "version": "1.0.0",
+  "description": "Umaa forma fácil de você gerenciar painel da Sigma sem eles disponibilizarem a API. ",
+  "main": "dist/server.js",
+  "scripts": {
+    "test": "test",
+    "build": "tsc",
+    "dev": "ts-node src/server.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/icleitoncosta/sigma-panel-api.git"
+  },
+  "keywords": [
+    "sigma api",
+    "painel sigma",
+    "sigma st",
+    "qpanel"
+  ],
+  "author": "icleitoncosta",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/icleitoncosta/sigma-panel-api/issues"
+  },
+  "homepage": "https://github.com/icleitoncosta/sigma-panel-api#readme",
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.13.11",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "playwright": "^1.51.1",
+    "playwright-extra": "^4.3.6",
+    "playwright-extra-plugin-stealth": "^0.0.1"
+  }
+}
