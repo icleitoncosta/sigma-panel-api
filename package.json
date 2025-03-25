@@ -8,7 +8,11 @@
     "build": "npm run build:types && npm run build:js",
     "build:types": "tsc",
     "build:js": "babel src --out-dir dist --extensions \".ts,.tsx\" --source-maps inline",
-    "dev": "ts-node src/server.ts"
+    "dev": "ts-node src/server.ts",
+    "changelog:last": "conventional-changelog -p angular -r 2 --config ./conventional-changelog.config.json",
+    "changelog:preview": "conventional-changelog -p angular -u --config ./conventional-changelog.config.json",
+    "changelog:update": "conventional-changelog -p angular -i CHANGELOG.md -s --config ./conventional-changelog.config.json",
+    "release": "release-it"
   },
   "repository": {
     "type": "git",
@@ -35,6 +39,8 @@
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.1",
     "@types/node": "^22.13.11",
+    "conventional-changelog-cli": "^5.0.0",
+    "release-it": "^18.1.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.2"
   },

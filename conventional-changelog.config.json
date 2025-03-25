@@ -1,0 +1,19 @@
+{
+    "options": {
+      "preset": {
+        "name": "conventionalcommits",
+        "types": [
+          { "type": "feat", "section": "✨ Funcionalidades:" },
+          { "type": "fix", "section": "🐛 Correção de Bugs:" },
+          { "type": "perf", "section": "⚡ Performance:" },
+          { "type": "refactor", "section": "🔨 Refatoração:" },
+          { "type": "test", "section": "✅ Testes:" },
+          { "type": "docs", "section": "📚 Documentação:" },
+          { "type": "revert", "section": "⏪ Reversão:" },
+          { "type": "chore", "hidden": true },
+          { "type": "style", "section": "💄 Estilo:" }
+        ]
+      }
+    }
+  }
+  
